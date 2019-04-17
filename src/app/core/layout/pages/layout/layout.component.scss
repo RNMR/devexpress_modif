@@ -1,0 +1,53 @@
+@import 'utilities';
+
+.rp-layout{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.dashboard{
+  flex: 1 0 auto;
+  display: flex;
+
+  &__col{
+    border-right: 3px solid #c3e1ff;
+    background-color: #337ab7;
+
+    >col{
+      width: 100%
+    }
+
+    &__menu{
+      width: 150px;
+      cursor: pointer;
+
+    }
+  }
+
+  .backgr-fa{
+    background-color: #fafafa;
+  }
+
+  // .dx-drawer-expand.dx-drawer-right .panel-list {
+  //   float: right;
+  // }
+
+  // .panel-list .dx-list-item {
+  //   color: #fff;
+  //   border-top: 1px solid rgba(221, 221, 221, .2);
+  // }
+
+  // .dx-drawer-panel-content{
+  //   background-color: #337ab7 ;
+  // }
+}
+
+@include media-breakpoint-down(sm) {
+  .dashboard{
+    &__holder{
+      flex-direction: column;
+    }
+  }
+}

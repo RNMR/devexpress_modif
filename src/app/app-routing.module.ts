@@ -8,37 +8,39 @@ import { DisplayDataComponent } from './pages/display-data/display-data.componen
 import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
 
 const routes: Routes = [
+  // {
+  //   path: 'display-data',
+  //   component: DisplayDataComponent,
+  //   canActivate: [ AuthGuardService ]
+  // },
+  // {
+  //   path: 'profile',
+  //   component: ProfileComponent,
+  //   canActivate: [ AuthGuardService ]
+  // },
+  // {
+  //   path: 'home',
+  //   component: HomeComponent,
+  //   canActivate: [ AuthGuardService ]
+  // },
+  // {
+  //   path: 'login-form',
+  //   component: LoginFormComponent,
+  //   canActivate: [ AuthGuardService ]
+  // },
+  // {
+  //   path: '**',
+  //   redirectTo: 'home',
+  //   canActivate: [ AuthGuardService ]
+  // }
   {
-    path: 'display-data',
-    component: DisplayDataComponent,
-    canActivate: [ AuthGuardService ]
-  },
-  {
-    path: 'profile',
-    component: ProfileComponent,
-    canActivate: [ AuthGuardService ]
-  },
-  {
-    path: 'home',
-    component: HomeComponent,
-    canActivate: [ AuthGuardService ]
-  },
-  {
-    path: 'login-form',
-    component: LoginFormComponent,
-    canActivate: [ AuthGuardService ]
-  },
-  {
-    path: '**',
-    redirectTo: 'home',
-    canActivate: [ AuthGuardService ]
+    path: '',
+    loadChildren: './core/layout/layout.module#LayoutModule'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), DxDataGridModule, DxFormModule],
-  providers: [AuthGuardService],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  declarations: [HomeComponent, ProfileComponent, DisplayDataComponent]
 })
 export class AppRoutingModule { }
