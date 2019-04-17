@@ -10,7 +10,7 @@ import { ScreenService, AuthService, AppInfoService } from 'src/app/core/service
 export class LayoutComponent {
   
   @HostBinding('class') get getClass() {
-    return Object.keys(this.screen.sizes).filter(cl => this.screen.sizes[cl]).join(' ');
+    return Object.keys(this.screen.sizes).filter(cl => this.screen.sizes[cl]).join(' ') + ' centerCont';
   }
 
   constructor(private authService: AuthService, private screen: ScreenService, public appInfo: AppInfoService) { }
