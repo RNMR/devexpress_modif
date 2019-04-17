@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LAYOUT_COMPONENTS } from './components';
 import { LAYOUT_PAGES, LayoutComponent } from './pages';
 import { SharedModule } from '../../shared/shared.module';
-import { AuthGuardService } from '../services';
+import { AuthGuardService, AuthService, ScreenService, AppInfoService } from '../services';
 
 const routes: Routes=[
   {
@@ -41,7 +41,7 @@ const routes: Routes=[
     RouterModule.forChild(routes),
   ],
   declarations: [...LAYOUT_COMPONENTS, LAYOUT_PAGES],
-  providers: [AuthGuardService],
+  providers: [AuthService, ScreenService, AppInfoService, AuthGuardService],
   exports:[...LAYOUT_COMPONENTS, LAYOUT_PAGES]
 })
 export class LayoutModule{

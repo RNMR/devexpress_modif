@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { 
   DxValidationGroupModule, DxValidatorModule, DxTextBoxModule, DxListModule,
   DxCheckBoxModule, DxButtonModule, DxToolbarModule, DxScrollViewModule, 
-  DxDrawerModule, DxContextMenuModule, DxTreeViewComponent, DxTreeViewModule, 
+  DxDrawerModule, DxContextMenuModule, DxTreeViewModule, 
   DxDataGridModule, DxFormModule  
 } from 'devextreme-angular';
 
@@ -17,7 +17,7 @@ const MODULES=[
   DxButtonModule, DxCheckBoxModule, DxContextMenuModule,
   DxTextBoxModule, DxValidatorModule, DxValidationGroupModule,
   DxToolbarModule, DxScrollViewModule, DxDrawerModule, DxListModule, 
-  DxTreeViewComponent, DxTreeViewModule
+  DxTreeViewModule
 ]
 
 @NgModule({

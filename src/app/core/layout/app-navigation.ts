@@ -10,11 +10,11 @@ export const navigation = [
     items: [
       {
         text: 'Profile',
-        path: '/profile'
+        path: '/examples/profile'
       },
       {
         text: 'Display Data',
-        path: '/display-data'
+        path: '/examples/display-data'
       }
     ]
   }

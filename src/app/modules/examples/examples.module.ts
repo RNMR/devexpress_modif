@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from '@angular/router';
 import { EXAMPLES_COMPONENTS } from './components';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { DisplayDataComponent, ProfileComponent } from './pages';
+import { DisplayDataComponent, ProfileComponent, EXAMPLES_PAGES } from './pages';
 
 export const routes : Routes = [
   {
@@ -16,8 +16,8 @@ export const routes : Routes = [
 ]
 @NgModule({
   imports: [RouterModule.forChild(routes), SharedModule],
-  declarations: [...EXAMPLES_COMPONENTS],
-  exports: [...EXAMPLES_COMPONENTS],
+  declarations: [...EXAMPLES_COMPONENTS, EXAMPLES_PAGES],
+  exports: [...EXAMPLES_COMPONENTS, EXAMPLES_PAGES],
 })
 export class ExamplesModule{
 

@@ -4,11 +4,13 @@ import { SideNavInnerToolbarComponent } from './side-nav-inner-toolbar/side-nav-
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { UserPanelComponent } from './user-panel/user-panel.component';
+import { SideNavigationMenuComponent } from './side-navigation-menu/side-navigation-menu.component';
 
 export const LAYOUT_COMPONENTS=[
   SingleCardComponent,
   SideNavOuterToolbarComponent,
   SideNavInnerToolbarComponent,
+  SideNavigationMenuComponent,
   HeaderComponent,
   FooterComponent,
   SingleCardComponent,
@@ -22,3 +24,4 @@ export * from './header/header.component';
 export * from './footer/footer.component';
 export * from './single-card/single-card.component';
 export * from './user-panel/user-panel.component';
+export * from './side-navigation-menu/side-navigation-menu.component';

@@ -1,11 +1,5 @@
-import { Component, OnInit, NgModule, Input } from '@angular/core';
-import { SideNavigationMenuModule, HeaderModule } from '../../shared/components';
+import { Component, OnInit, Input } from '@angular/core';
 import { ScreenService } from '../../../services';
-import { DxDrawerModule } from 'devextreme-angular/ui/drawer';
-import { DxScrollViewModule } from 'devextreme-angular/ui/scroll-view';
-import { DxToolbarModule } from 'devextreme-angular/ui/toolbar';
-import { CommonModule } from '@angular/common';
-
 import { navigation } from '../../app-navigation';
 import { Router, NavigationEnd } from '@angular/router';
 
