@@ -17,5 +17,10 @@ export const navigation = [
         path: '/examples/display-data'
       }
     ]
+  },
+  {
+    text: 'Budgets',
+    path: '/budgets',
+    icon: 'bulletlist'
   }
 ];

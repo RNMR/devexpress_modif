@@ -26,6 +26,11 @@ const routes: Routes=[
         canActivate: [ AuthGuardService ]
       },
       {
+        path: 'budgets',
+        loadChildren: '../../modules/budgets/budgets.module#BudgetsModule',
+        canActivate: [ AuthGuardService ]
+      },
+      {
         path: '**',
         redirectTo: '/home',
         canActivate: [ AuthGuardService ]

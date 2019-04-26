@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_url: "http://getlinkhere.com"
+  api_url: "https://api.realplazalabs.com/v1/"
 };
 
 /*
