@@ -26,6 +26,7 @@ export class MyBudgetComponent {
       data.forEach(d => {
         d.keyData = `${d.userId}_${d.id}`
       });
+      //These will be the fathers, the only important key is keyData
       const zen = [
         { id:"0001", keyData: "1", title:'Primero' },
         { id:"0002", keyData: "2", title:'Segundo' },
@@ -36,7 +37,7 @@ export class MyBudgetComponent {
         { id:"0007", keyData: "7", title:'Bruajds' },
         { id:"0008", keyData: "8", title:'manito' },
         { id:"0009", keyData: "9", title:'Noveno' },
-        { id:"0010", keyData: "10", title:'Decameron' },
+        { id:"0010", keyData: "10",title:'Decameron' },
       ]
       this.testSource = [...data, ...zen]
       console.log( "woopsie",data)
