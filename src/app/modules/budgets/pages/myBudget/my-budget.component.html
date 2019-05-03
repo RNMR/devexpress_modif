@@ -1,7 +1,33 @@
-<p>beep</p>
-<!-- <dx-tree-list>
-  <dxi-column datafield=""></dxi-column>
-  <dxi-column datafield=""></dxi-column>
-  <dxi-column datafield="" dataType=""></dxi-column>
-  <dxi-column datafield="" dataType=""></dxi-column>
-</dx-tree-list> -->
+<div class="tree-holder">
+    <p>beep</p>
+  <!-- Este componente necesita un estilo max-height obligatoriamente -->
+  <!-- Puesto que de no tenerlo genera espacio extra lleno con :before 's' -->
+  <dx-tree-list 
+    id="treelist"
+    keyExpr="id"
+    [dataSource]="dataSource"
+    [showBorders]="true"
+    [remoteOperations]="{ filtering: true }"
+    parentIdExpr="parentId"
+    hasItemsExpr="hasItems"
+    rootValue=""
+    class="tree-DX"
+  >
+    <dxi-column dataField="name"></dxi-column>
+    <dxi-column dataField="size" [customizeText]="customizeSizeText" [width]="100"></dxi-column>
+    <dxi-column dataField="createdDate" dataType="date" [width]="150"></dxi-column>
+    <dxi-column dataField="modifiedDate" dataType="date" [width]="150"></dxi-column>
+  </dx-tree-list>
+  <div class="tree-center">
+    <dx-tree-list
+      [dataSource]="testSource"
+      keyExpr="keyData"
+      parentIdExpr="userId"
+      [hint]="body"
+      class="tree-DX-json"
+    >
+      <dxi-column dataField="id" [width]="110"></dxi-column>
+      <dxi-column dataField="title"></dxi-column>
+    </dx-tree-list>
+  </div>
+</div>

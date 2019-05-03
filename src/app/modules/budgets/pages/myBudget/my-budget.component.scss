@@ -1,0 +1,21 @@
+.tree{
+  &-holder{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  &-DX{
+    max-height: 500px
+  }
+
+  &-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 0px;
+  }
+
+  &-DX-json{
+    width: 40%;
+  }
+}
